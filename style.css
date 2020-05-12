@@ -1,0 +1,39 @@
+.background {
+  background: rgba(0, 128, 0, 0.1);
+}
+
+canvas {
+  width: 300pt;
+  height: 200pt;
+  border: 1px solid
+}
+
+.inline { 
+  display: inline-block; 
+  margin:10px;
+}
+
+.serif {
+  font-family: "Georgia", Times, serif;
+}
+
+.btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.round_btn {
+  border-radius: 60%;
+}
+
+#clear_btn {
+  text-align:center;
+}

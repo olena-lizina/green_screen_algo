@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>GreenScreenProblem</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="background">
+    <h1 style="color:green;">Green Screen Algorithm</h1>
+    <h3 class="serif">How to use:</h3>
+    <ul class="serif">
+      <li>Upload an image with green backgroud.</li>
+      <li>Upload a background image of the same size.</li>
+      <li>Click "Compose" button to merge these images.</li>
+    </ul>
+  
+    <!-- images -->
+    <div class='inline'>
+      <p class="serif" style="font-size: 150%;">Foreground:</p>
+      <canvas id="fgCan"></canvas>
+      <p><input type="file" multiple="false" accept="image/*" id="fginput" onchange="uploadForeground()"></p>
+    </div>
+  
+    <div class='inline'>
+      <p class="serif" style="font-size: 150%;">Background:</p>
+      <canvas id="bgCan"></canvas>
+      <p><input type="file" multiple="false" accept="image/*" id="bginput" onchange="uploadBackground()"></p>
+    </div>
+  
+    <div class='inline'>
+      <p class="serif" style="font-size: 150%;">Result:</p>
+      <canvas id="canComposite"></canvas>
+      <p><input type="button" id="makeGrayBt" value="Compose" onclick="compose()"></p>
+      </p>
+    </div>
+  
+    <div id="clear_btn">
+      <input type="button" class="btn round_btn" id="clear" value="Clear Result" onclick="clearRes()">
+    </div>
+  </div>
+  
+  <!-- scripts -->
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"> </script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
